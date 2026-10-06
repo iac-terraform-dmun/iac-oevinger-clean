@@ -1,6 +1,6 @@
 provider "azurerm" {
   features {}
-  subscription_id = var.subscription_id
+  resource_providers_to_register = ["Microsoft.Storage"]
 }
 
 # Nettverks-stacken eier ressursgruppa: den rulles ut først og rives sist.

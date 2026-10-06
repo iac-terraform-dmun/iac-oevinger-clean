@@ -1,13 +1,3 @@
-variable "subscription_id" {
-  type        = string
-  description = "Abonnementet ressursene opprettes i"
-}
-
-variable "company" {
-  type        = string
-  description = "Navnet på selskapet som eier ressursene"
-}
-
 variable "short_name" {
   type        = string
   description = "Personlig kortnavn som holder ressursnavn unike i delt tenant"
@@ -15,12 +5,7 @@ variable "short_name" {
 
 variable "environment" {
   type        = string
-  description = "Navnet på miljøet stacken tilhører (dev, prod)"
-}
-
-variable "owner" {
-  type        = string
-  description = "Navnet på eieren av ressursene"
+  description = "Navnet på miljøet stacken tilhører (dev, test, prod)"
 }
 
 variable "location" {
